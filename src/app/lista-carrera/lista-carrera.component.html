@@ -1,0 +1,14 @@
+<p>lista-carrera works!</p>
+
+
+<span *ngIf="ListadoCarrera.length == 0">
+    No existen contactos
+</span>
+
+<ul>
+    <li *ngFor="let crear of ListadoCarrera">
+        <button (click)="eliminar(crear)">Eliminar</button>
+        
+    </li>
+    
+</ul>

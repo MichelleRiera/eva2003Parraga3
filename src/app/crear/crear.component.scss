@@ -1,0 +1,34 @@
+
+ 
+    /* Estilos para los labels */
+    label {
+      display: block;
+      color: rgb(204, 30, 59);
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    /* Estilos para los inputs */
+    input {
+      width: 200px;
+      padding: 5px;
+      border: 1px solid pink;
+      border-radius: 3px;
+    }
+
+    /* Estilos para el botón */
+    button {
+      padding: 10px 20px;
+      background-color: pink;
+      color: rgb(218, 82, 82);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Espacio entre los elementos */
+    br {
+      margin-bottom: 10px;
+    }
+  
+
