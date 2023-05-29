@@ -7,6 +7,7 @@
 
 <ul>
     <li *ngFor="let crear of ListadoCarrera">
+        <button (click)="editar(crear)">{{crear.codigo}} | {{crear.nombre}}</button >
         <button (click)="eliminar(crear)">Eliminar</button>
         
     </li>

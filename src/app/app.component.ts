@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CrearService } from './crear.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'eva2023Parraga';
+  @Input() name = "Michelle"
+  
+
+  constructor(private CrearService: CrearService) { 
+  }
+
+  ngOnInit() {
+  }
 }

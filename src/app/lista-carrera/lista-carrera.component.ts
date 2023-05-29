@@ -12,19 +12,27 @@ export class ListaCarreraComponent {
   ListadoCarrera: crear[];
  
 
-  constructor(private CrearService: CrearService,
-      private router: Router) {
+  constructor(private CrearService : CrearService, 
+    private router: Router){
     this.ListadoCarrera = CrearService.getList()
-    console.log('listaCarrera', this.ListadoCarrera)
-    //this.crear =CrearService.crear
-    
-    
+    console.log('listadoContactos', this.ListadoCarrera)
+
   }
 
- 
- 
+
+  editar(crear: crear){
+    //this.contacto = contacto
+    this.CrearService.updateCrear(crear)
+    let params: NavigationExtras = {
+      queryParams: {
+        codigo: crear.codigo
+
+      }
+    }   
+    this.router.navigate(["crear"], params)
 
   
+  }
 
   eliminar(crear: crear) {
     this.CrearService.delete(crear.codigo);

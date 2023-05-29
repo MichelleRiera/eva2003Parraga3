@@ -7,12 +7,14 @@ import { CrearComponent } from './crear/crear.component';
 export class CrearService {
   crear: crear[] = [];
     comp: any;
+
+
+  setComponet(comp: CrearComponent){
+    this.comp = comp
+  }
+
   
-    setComponet(comp: CrearComponent){
-      this.comp = comp
-    }
-  
-    updateCrear(crear: CrearComponent){
+    updateCrear(crear: crear){
       this.comp.crear = crear
     }
   
@@ -47,8 +49,6 @@ export class CrearService {
     getCrear(codigo: string): crear | undefined{
       return this.crear.find(crear =>  crear.codigo=== codigo);
     }
-
-  constructor() { 
     
-  }
+
 }

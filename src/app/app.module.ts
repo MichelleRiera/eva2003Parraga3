@@ -11,6 +11,8 @@ import { ListaCarreraComponent } from './lista-carrera/lista-carrera.component';
 import { AcercaDeComponent } from './acerca-de/acerca-de.component';
 import { CrearComponent } from './crear/crear.component';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -27,6 +29,9 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    BrowserAnimationsModule,
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
